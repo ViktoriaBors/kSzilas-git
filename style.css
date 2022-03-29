@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+nav {
+  font-size: large;
+}
+
+.nav-link:hover {
+  border-bottom: dashed white 1px;
+  padding-bottom: 1px;
+}
+
+.blurprofile {
+  position: relative;
+}
+.profileimg {
+  background-image: url(KristofferSzilas.jpg);
+  filter: blur(2px);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 8rem;
+}
+
+.textmiddle {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  border: 3px solid white;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+i {
+  color: rgb(75, 75, 75);
+}
+
+i:hover {
+  background-color: none;
+  color: rgba(39, 45, 39, 0.8);
+}
+
+a {
+  font-weight: bolder;
+}
+
+.card-text > a:hover,
+section p > a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#filterbutton {
+  position: absolute;
+  top: 0;
+  right: 1vh;
+  background-image: url("aicon.png");
+  background-size: cover;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  border: none;
+}
+
+#totop {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vh;
+  z-index: 1;
+  font-size: 1.5rem;
+  scroll-behavior: smooth;
+}
+
+.number {
+  font-weight: bolder;
+}
+
+.access {
+  filter: grayscale(100%);
+  font-size: large;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black;
+}
