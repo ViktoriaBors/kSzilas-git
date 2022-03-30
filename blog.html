@@ -28,30 +28,51 @@
 
 
     <!-- Carousel-->
-    <div id="carouselExampleSlidesOnly" class="carousel slide m-5" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="container">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="1.jpg" class="d-block w-100" alt="Image carousel slide 1 - ice climbing in Norway">
-                </div>
-                <div class="carousel-item">
-                    <img src="2.jpg" class="d-block w-100"
-                        alt="Image carousel slide 2 - getting ready for free-hanging icicles">
-                </div>
-                <div class="carousel-item">
-                    <img src="3.JPG" class="d-block w-100" alt="Image carousel slide 3 - Evening view of Fitz Roy">
-                </div>
-                <div class="carousel-item">
-                    <img src="4.JPG" class="d-block w-100"
-                        alt="Image carousel slide 4 - Near the summit of Mooses Tooth,Alaska">
-                </div>
-                <div class="carousel-item">
-                    <img src="5.jpg" class="d-block w-100"
-                        alt="Image carousel slide 5 - David, my companion, on the ridge near Fitz Roy">
-                </div>
+<div id="carouselIndicators" class="carousel slide m-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Image Slide 1"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+            aria-label="Image Slide 2"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+            aria-label="Image Slide 3"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+            aria-label="Image Slide 4"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"
+            aria-label="Image Slide 5"></button>
+    </div>
+    <div class="container">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="Image carousel slide 1 - ice climbing in Norway">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100"
+                    alt="Image carousel slide 2 - getting ready for free-hanging icicles">
+            </div>
+            <div class="carousel-item">
+                <img src="3.JPG" class="d-block w-100" alt="Image carousel slide 3 - Evening view of Fitz Roy">
+            </div>
+            <div class="carousel-item">
+                <img src="4.JPG" class="d-block w-100"
+                    alt="Image carousel slide 4 - Near the summit of Mooses Tooth,Alaska">
+            </div>
+            <div class="carousel-item">
+                <img src="5.jpg" class="d-block w-100"
+                    alt="Image carousel slide 5 - David, my companion, on the ridge near Fitz Roy">
             </div>
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -80,7 +101,7 @@
 
         <!--Card style for media apperances-->
         <main class="m-3">
-            <section class="accessibility">
+            <section>
                 <h3>Here you can find some stories about mountain climbing.</h3>
                 <p>Full list of blog entries can be found on <a
                         href="https://www.kristofferszilas.com/apps/blog/" target="_blank"
@@ -89,7 +110,7 @@
             <div class="container-fluid">                
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
                         <div class="col">
-                            <div class="card border-dark accessibility ">
+                            <div class="card border-dark">
                                     <img src="img/blog1.JPG" class="card-img-top" alt="Climbing the Great Roof">
                                     <div class="card-body mt-4">
                                         <h5 class="card-title">The Nose on El Capitan</h5>
@@ -105,7 +126,7 @@
                                 <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                                     aria-labelledby="NoseonEl" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                                        <div class="modal-content accessibility">
+                                        <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="NoseonEl">The Nose on El Capitan</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -134,14 +155,14 @@
                                                 approach to get to the base of the wall and good rock as with most climbs in Yosemite Valley.</p>
                                             </div>
                                             <div class="modal-footer">
-                                                    <button type="button" class="btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                         </div>
                         <div class="col">
-                                <div class="card border-dark accessibility">
+                                <div class="card border-dark">
                                     <img src="img/blog2.jpg" class="card-img-top" alt="Going up on the ridge of Fitz Roy">
                                     <div class="card-body mt-4">
                                         <h5 class="card-title">Supercanaleta - Fitz Roy</h5>
@@ -157,7 +178,7 @@
                                     <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                                         aria-labelledby="FitzRoy" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                                            <div class="modal-content accessibility">
+                                            <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="FitzRoy">Supercanaleta - Fitz Roy</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -172,7 +193,7 @@
                                                     until now. </p>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -225,7 +246,7 @@
                                                     vertical height of 3700 feet (ca. 1100 meters).</p>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -267,7 +288,7 @@
                                                     really nice, but all of the routes are sandbagged and hard for their grade.</p>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
                                                 </div>
                                             </div>
                                         </div>

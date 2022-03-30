@@ -20,14 +20,9 @@ nav {
 .blurprofile {
   position: relative;
 }
-.profileimg {
-  background-image: url(KristofferSzilas.jpg);
-  filter: blur(2px);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  padding: 8rem;
+.profileimg img {
+  width: 100%;
+  filter: blur(3px);
 }
 
 .textmiddle {
@@ -76,9 +71,9 @@ section p > a:hover {
 }
 
 #totop {
-  position: absolute;
-  bottom: 1vh;
-  right: 1vh;
+  position: fixed;
+  bottom: 0px;
+  right: 3px;
   z-index: 1;
   font-size: 1.5rem;
   scroll-behavior: smooth;
@@ -89,8 +84,10 @@ section p > a:hover {
 }
 
 .access {
-  filter: grayscale(100%);
   font-size: large;
+}
+.access img {
+  filter: grayscale(100%);
 }
 
 .carousel-control-prev-icon,

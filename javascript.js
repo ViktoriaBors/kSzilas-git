@@ -1,29 +1,16 @@
-let accessbutton=document.getElementById("filterbutton")
-let access=document.getElementById("accessibility")
+const accessbutton = document.getElementById("filterbutton");
+const access = document.getElementById("accessibility");
 
-
-
-accessbutton.addEventListener("click", function(){
-    access.classList.toggle("access");
-    localStorage.setItem("clicked", "yes")
+accessbutton.addEventListener("click", function () {
+  access.classList.toggle("access");
+  localStorage.setItem(
+    "clicked",
+    localStorage.getItem("clicked") === "yes" ? "no" : "yes"
+  );
 });
 
-if (localStorage.getItem("clicked")=="yes"){
-    let access=document.getElementById("accesibility")
-    access.classList.add("access")
+if (localStorage.getItem("clicked") === "yes") {
+  access.classList.add("access");
+} else {
+  access.classList.remove("access");
 }
-
-/*
-let access2=document.querySelectorAll(".accesibility")
-accessbutton.addEventListener("click", function(){
-    for (oneAcessDiv of access2){
-        oneAcessDiv.classList.toggle("access");
-        sessionStorage.setItem("clicked", "yes")
-    }
-});
-
-if (sessionStorage.getItem("clicked")=="yes"){
-    let access2=document.querySelectorAll(".accesibility")
-         access2.className += " access";
-         access2.classList.add("access");
-}*/
