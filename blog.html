@@ -1,370 +1,705 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
     <!--Bootstrap Icons-->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
     <!--Link to Own Css file-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Kristoffer Szilas</title>
-</head>
+  </head>
 
-<body class="bg-secondary bg-gradient" style="--bs-bg-opacity: .5;">
+  <body class="bg-secondary bg-gradient" style="--bs-bg-opacity: 0.5">
     <!-- Colorblind icon and to top arrow-->
-<div id="accessibility">
-    <button id="filterbutton" aria-label="Button to switch to grayscale filter mode"></button>
-    <a href="#" aria-label="Go to the top"><i id="totop" class="bi bi-arrow-up-circle-fill"></i></a>
+    <div id="accessibility">
+      <button
+        id="filterbutton"
+        aria-label="Button to switch to grayscale filter mode"
+      ></button>
+      <a href="#" aria-label="Go to the top"
+        ><i id="totop" class="bi bi-arrow-up-circle-fill"></i
+      ></a>
 
-
-    <!-- Carousel-->
-<div id="carouselIndicators" class="carousel slide m-5" data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Image Slide 1"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
-            aria-label="Image Slide 2"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
-            aria-label="Image Slide 3"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
-            aria-label="Image Slide 4"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"
-            aria-label="Image Slide 5"></button>
-    </div>
-    <div class="container">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="1.jpg" class="d-block w-100" alt="Image carousel slide 1 - ice climbing in Norway">
-            </div>
-            <div class="carousel-item">
-                <img src="2.jpg" class="d-block w-100"
-                    alt="Image carousel slide 2 - getting ready for free-hanging icicles">
-            </div>
-            <div class="carousel-item">
-                <img src="3.JPG" class="d-block w-100" alt="Image carousel slide 3 - Evening view of Fitz Roy">
-            </div>
-            <div class="carousel-item">
-                <img src="4.JPG" class="d-block w-100"
-                    alt="Image carousel slide 4 - Near the summit of Mooses Tooth,Alaska">
-            </div>
-            <div class="carousel-item">
-                <img src="5.jpg" class="d-block w-100"
-                    alt="Image carousel slide 5 - David, my companion, on the ridge near Fitz Roy">
-            </div>
+      <!-- Carousel-->
+      <div
+        id="carouselIndicators"
+        class="carousel slide m-5"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Image Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Image Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Image Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="3"
+            aria-label="Image Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="4"
+            aria-label="Image Slide 5"
+          ></button>
         </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand active" href="index.html">Kristoffer Szilas</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Open and close navigation bar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutme.html">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="media.html">Media Apperances</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="blog.html">Mountain Climbing Blog</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="container">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="1.jpg"
+                class="d-block w-100"
+                alt="Image carousel slide 1 - ice climbing in Norway"
+              />
             </div>
+            <div class="carousel-item">
+              <img
+                src="2.jpg"
+                class="d-block w-100"
+                alt="Image carousel slide 2 - getting ready for free-hanging icicles"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="3.JPG"
+                class="d-block w-100"
+                alt="Image carousel slide 3 - Evening view of Fitz Roy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="4.JPG"
+                class="d-block w-100"
+                alt="Image carousel slide 4 - Near the summit of Mooses Tooth,Alaska"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="5.jpg"
+                class="d-block w-100"
+                alt="Image carousel slide 5 - David, my companion, on the ridge near Fitz Roy"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand active" href="index.html">Kristoffer Szilas</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Open and close navigation bar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="media.html">Media Apperances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html"
+                  >Mountain Climbing Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Card style for media apperances-->
+      <main class="m-3">
+        <section>
+          <h3>Here you can find some stories about mountain climbing.</h3>
+          <p>
+            Full list of blog entries can be found on
+            <a
+              href="https://www.kristofferszilas.com/apps/blog/"
+              target="_blank"
+              class="text-dark"
+              >the following link.</a
+            >
+          </p>
+        </section>
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+            <div class="col">
+              <div class="card border-dark">
+                <img
+                  src="img/blog1.JPG"
+                  class="card-img-top"
+                  alt="Climbing the Great Roof"
+                />
+                <div class="card-body mt-4">
+                  <h5 class="card-title">The Nose on El Capitan</h5>
+                  <p class="card-text">
+                    The spring season has come to an end for bigwall climbing in
+                    Yosemite Valley. I finally got to do the Nose on El Capitan,
+                    which is arguably the most famous rock climb in the world.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal1"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="NoseonEl"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="NoseonEl">
+                        The Nose on El Capitan
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="img/blog1modal.JPG"
+                        class="card-img-top mb-3"
+                        alt="Looking down from the Great Roof - long way from home"
+                      />
+                      <p class="text-justify">
+                        Fortunately, it was every bit as good as its reputation.
+                        In many ways it reminded me of the Heckmaier route on
+                        the north face of the Eiger by being a complex route up
+                        the longest part of the wall with lots of historic
+                        pitches, although the former is a pure mixed climb
+                        whereas the Nose is a pure rock climb. <br />
+                        <br />
+
+                        There are several interesting pendulums on the Nose,
+                        which makes for a fairly committing feeling on the
+                        route. Especially the King Swing was intimidating and it
+                        required complete trust in the ropes and climbing gear.
+                        <br />
+                        <br />
+
+                        I’m grateful that I once again got sponsorship from
+                        Scanlico who provided me with ropes from Beal and
+                        climbing gear from Petzl. In particular I would highly
+                        recommend the Apollo rope, which is 11 mm thick and
+                        really inspires confidence when rappelling and jumaring
+                        on an exposed bigwall route. The new Petzl Ascension
+                        jumars are also worth mentioning because they have been
+                        significantly improved and are now both light and easy
+                        to handle. They slide very well on the rope and it is
+                        possible to temporally disengage the teeth when moving
+                        the Ascension up a rope that is not weighted, which
+                        makes it a lot easier to use than the previous version.
+                        Another piece of critical climbing gear on a bigwall is
+                        the Grigri, which makes it a lot safer to belay pitches
+                        that take a long time to lead because you don’t have to
+                        watch the climber as closely as with a normal belay
+                        device. If I need to let go of the rope to eat or to
+                        send up more gear on the tag line I still need to tie a
+                        knot about a meter away from the device just to be
+                        completely safe, but the Grigri greatly reduces the
+                        stress of belaying because of the automatic blocking
+                        mechanism. <br />
+                        <br />
+
+                        After the Nose we did Skull Queen on Washington Column,
+                        which was a nice route with mostly aid climbing. It has
+                        an easy approach to get to the base of the wall and good
+                        rock as with most climbs in Yosemite Valley.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-dark">
+                <img
+                  src="img/blog2.jpg"
+                  class="card-img-top"
+                  alt="Going up on the ridge of Fitz Roy"
+                />
+                <div class="card-body mt-4">
+                  <h5 class="card-title">Supercanaleta - Fitz Roy</h5>
+                  <p class="card-text">
+                    I finally managed to summit Fitz Roy in Patagonia, climbing
+                    the classic "Supercanaleta" with David Gladwin (UK) and Kim
+                    Ladiges from Tasmania.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal2"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal2"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="FitzRoy"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="FitzRoy">
+                        Supercanaleta - Fitz Roy
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="img/blog2-modal.jpg"
+                        class="card-img-top mb-3"
+                        alt="David, my companion, on the ridge near Fitz Roy"
+                      />
+                      <p class="text-justify">
+                        This mountain has been a project for me on four trips to
+                        Patagonia, but due to miserable weather and bad climbing
+                        conditions it was not until now that it all came
+                        together for a successful ascent. We had a fantastic
+                        climb despite it being a really cold day. Several teams
+                        turned back that day after having climbed the initial
+                        couloir, because they were too cold to continue. Luckily
+                        we felt good about going all the way to the top and
+                        descended the direct way back to the base of the climb
+                        in an exhausting 33 hour round-trip. Interestingly, this
+                        iconic mountain has not had a Danish ascent until now.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-dark">
+                <img
+                  src="img/blog3.JPG"
+                  class="card-img-top"
+                  alt="Jess, my companion, on the ice crux."
+                />
+                <div class="card-body mt-4">
+                  <h5 class="card-title">
+                    First ascent of the Hypa Zypa Couloir
+                  </h5>
+                  <p class="card-text">
+                    Our initial plan was simply to repeat the ‘Supa Dupa’.
+                    However, there was a possibility of a potential new line to
+                    the left of it.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal3"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal3"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="HypaZypa"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="HypaZypa">
+                        First ascent of the Hypa Zypa Couloir
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="img/blog3-modal.JPG"
+                        class="card-img-top mb-3"
+                        alt="Myself standing happy on the summit of the Citadel"
+                      />
+                      <p class="text-justify">
+                        Our new line follows a series of ice runnels to the left
+                        of the ‘Supa Dupa Couloir’ established in 2003 by Mike
+                        ‘Twid’ Turner, Stu McAleese and Olly Sanders. <br />
+                        <br />
+                        Initial snow and ice pitches in the couloir led up to a
+                        very steep corner with difficulties of AI5+ and M6+.
+                        Jess was the ropegun on these pitches. At sunset we
+                        chopped a ledge on a 60 degree ice slope and suffered
+                        through a sitting bivy in the cold Alaskan night. We had
+                        brought a small tent, but it did not fit our ledge and
+                        collapsed on us during the night. Early the next day we
+                        arrived at the col, which marks the end of the couloir.
+                        From there Ben led several pure rock pitches on the
+                        relatively warm south ridge. The first pitch off the col
+                        was steep A3. He then climbed the 5.10R crux without
+                        gloves and crampons, which was a full 60 meter pitch. We
+                        reached the summit ridge that evening, but bivied only a
+                        stones through from the actual summit on the east side
+                        of the ridge. We once again settled in for a sitting
+                        bivy on a chopped ice ledge. After a very uncomfortable
+                        night we rappelled down a gap on the west face, which
+                        took us to an easy snow ramp that lead directly to the
+                        summit. The summit itself consisted of two large granite
+                        blocks about five meters high, which from a distance
+                        looked unclimbable. Fortunately there was an easy way up
+                        on their back side. After a short brew stop, we then
+                        faced an arduous descent down the north ridge where our
+                        rappel lines got stuck several time, and we had lots of
+                        exposed down climbing and also had to rappel off our
+                        only two snowstakes. In the last rays of the sun we did
+                        one final rappel off a spectre-hook, which was hammered
+                        less than 3 cm into an icy crack, but even scarier it
+                        was flexing under bodyweight. However, it got us over
+                        the bergschrund with one meter of rope to spare and we
+                        reached the safety of the flat glacier terrain. We
+                        stumbled back into our base camp 70 hours after having
+                        left it. <br /><br />
+
+                        We jokingly named our new route the ‘Hypa Zypa Couloir’
+                        in keeping with the name of the ‘Supa Dupa’. That way
+                        the Super and Hyper couloirs of the Kichatnas are
+                        located side by side unlike in the Alps. The overall
+                        difficulty of our route is American commitment grade VI
+                        corresponding to European ‘ED+’ with technical pitches
+                        of AI5+, M6+, 5.10R, A3 and a vertical height of 3700
+                        feet (ca. 1100 meters).
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-dark">
+                <img
+                  src="img/blog4.jpg"
+                  class="card-img-top"
+                  alt="Beautiful Grotti di Landro"
+                />
+                <div class="card-body mt-4">
+                  <h5 class="card-title">Grotto di Landro - Italy</h5>
+                  <p class="card-text">
+                    Our initial plan was to repeat the ”Mission Impossible”
+                    (M11). Unfortunately the ice curtain hadn’t formed so the
+                    route was indeed impossible.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal4"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal4"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="Grotto"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="Grotto">
+                        Grotto di Landro - Italy
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="img/blog4-modal.JPG"
+                        class="card-img-top mb-3"
+                        alt="Topping out through the short roof section"
+                      />
+                      <p class="text-justify">
+                        For 6 months I have been training hard with this single
+                        route in mind, so it was quite disappointing to say the
+                        least. <br /><br />
+
+                        We then headed over to Cogne to have a look at “X-Files”
+                        and “Empire Strikes Back”, but after closer inspection
+                        they proved to be very loose and had poor options for
+                        protection, so instead we climbed the pure ice route
+                        Repentance Super (WI6), which gave 5 pitches of nice ice
+                        climbing. <br />
+                        <br />
+
+                        However, we were hungry for some physically hard mixed
+                        climbing, so we drove across Italy to the Dolomites to
+                        have a look at Grotto di Landro, which was supposed to
+                        have some of the hardest mixed lines in all of Italy.
+                        This cave is really nice, but all of the routes are
+                        sandbagged and hard for their grade.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section>
+        <nav aria-label="Page navigation between blog articles">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link text-white bg-dark" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link text-dark" href="blog2.html">2</a>
+            </li>
+          </ul>
         </nav>
+      </section>
 
-
-        <!--Card style for media apperances-->
-        <main class="m-3">
-            <section>
-                <h3>Here you can find some stories about mountain climbing.</h3>
-                <p>Full list of blog entries can be found on <a
-                        href="https://www.kristofferszilas.com/apps/blog/" target="_blank"
-                        class="text-dark">the following link.</a></p>
-            </section>
-            <div class="container-fluid">                
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-                        <div class="col">
-                            <div class="card border-dark">
-                                    <img src="img/blog1.JPG" class="card-img-top" alt="Climbing the Great Roof">
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">The Nose on El Capitan</h5>
-                                        <p class="card-text">The spring season has come to an end for bigwall climbing in Yosemite Valley. I finally got to do the Nose on El
-                                        Capitan, which is arguably the most famous rock climb in the world.</p>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1">
-                                            Read more
-                                        </button>                                    
-                                   </div>
-                            </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                    aria-labelledby="NoseonEl" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="NoseonEl">The Nose on El Capitan</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="img/blog1modal.JPG" class="card-img-top mb-3" alt="Looking down from the Great Roof - long way from home">
-                                                <p class="text-justify"> Fortunately, it was every bit as good as its reputation. In many ways it reminded me of the Heckmaier route on the north
-                                                face of the Eiger by being a complex route up the longest part of the wall with lots of historic pitches, although the
-                                                former is a pure mixed climb whereas the Nose is a pure rock climb. <br> <br>
-                                                
-                                                There are several interesting pendulums on the Nose, which makes for a fairly committing feeling on the route.
-                                                Especially the King Swing was intimidating and it required complete trust in the ropes and climbing gear. <br> <br>
-                                                
-                                                I’m grateful that I once again got sponsorship from Scanlico who provided me with ropes from Beal and climbing gear from
-                                                Petzl. In particular I would highly recommend the Apollo rope, which is 11 mm thick and really inspires confidence when
-                                                rappelling and jumaring on an exposed bigwall route. The new Petzl Ascension jumars are also worth mentioning because
-                                                they have been significantly improved and are now both light and easy to handle. They slide very well on the rope and it
-                                                is possible to temporally disengage the teeth when moving the Ascension up a rope that is not weighted, which makes it a
-                                                lot easier to use than the previous version. Another piece of critical climbing gear on a bigwall is the Grigri, which
-                                                makes it a lot safer to belay pitches that take a long time to lead because you don’t have to watch the climber as
-                                                closely as with a normal belay device. If I need to let go of the rope to eat or to send up more gear on the tag line I
-                                                still need to tie a knot about a meter away from the device just to be completely safe, but the Grigri greatly reduces
-                                                the stress of belaying because of the automatic blocking mechanism. <br> <br>
-                                                
-                                                After the Nose we did Skull Queen on Washington Column, which was a nice route with mostly aid climbing. It has an easy
-                                                approach to get to the base of the wall and good rock as with most climbs in Yosemite Valley.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col">
-                                <div class="card border-dark">
-                                    <img src="img/blog2.jpg" class="card-img-top" alt="Going up on the ridge of Fitz Roy">
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">Supercanaleta - Fitz Roy</h5>
-                                        <p class="card-text">I finally managed to summit Fitz Roy in Patagonia, climbing the classic "Supercanaleta" with David Gladwin (UK) and Kim
-                                        Ladiges from Tasmania.</p>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
-                                            Read more
-                                        </button>
-                                    </div>
-                                </div>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                        aria-labelledby="FitzRoy" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="FitzRoy">Supercanaleta - Fitz Roy</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <img src="img/blog2-modal.jpg" class="card-img-top mb-3" alt="David, my companion, on the ridge near Fitz Roy">
-                                                    <p class="text-justify">This mountain has been a project for me on four trips to Patagonia, but due to miserable weather and bad climbing
-                                                    conditions it was not until now that it all came together for a successful ascent. We had a fantastic climb despite it
-                                                    being a really cold day. Several teams turned back that day after having climbed the initial couloir, because they were
-                                                    too cold to continue. Luckily we felt good about going all the way to the top and descended the direct way back to the
-                                                    base of the climb in an exhausting 33 hour round-trip. Interestingly, this iconic mountain has not had a Danish ascent
-                                                    until now. </p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-dark ">
-                                    <img src="img/blog3.JPG" class="card-img-top" alt="Jess, my companion, on the ice crux.">
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">First ascent of the Hypa Zypa Couloir</h5>
-                                        <p class="card-text">Our initial plan was simply to repeat the ‘Supa Dupa’. However, there was a possibility of a potential new line to the left of it.</p>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal3">
-                                            Read more
-                                        </button>
-                                    </div>
-                                </div>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                        aria-labelledby="HypaZypa" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="HypaZypa">First ascent of the Hypa Zypa Couloir</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <img src="img/blog3-modal.JPG" class="card-img-top mb-3" alt="Myself standing happy on the summit of the Citadel">
-                                                    <p class="text-justify">Our new line follows a series of ice runnels to the left of the ‘Supa Dupa Couloir’ established in 2003 by Mike ‘Twid’
-                                                    Turner, Stu McAleese and Olly Sanders. <br> <br>
-                                                     Initial snow and ice pitches in the couloir led up to a very steep corner with difficulties of AI5+ and M6+. Jess was
-                                                    the ropegun on these pitches. At sunset we chopped a ledge on a 60 degree ice slope and suffered through a sitting bivy
-                                                    in the cold Alaskan night. We had brought a small tent, but it did not fit our ledge and collapsed on us during the
-                                                    night. Early the next day we arrived at the col, which marks the end of the couloir. From there Ben led several pure
-                                                    rock pitches on the relatively warm south ridge. The first pitch off the col was steep A3. He then climbed the 5.10R
-                                                    crux without gloves and crampons, which was a full 60 meter pitch. We reached the summit ridge that evening, but bivied
-                                                    only a stones through from the actual summit on the east side of the ridge. We once again settled in for a sitting bivy
-                                                    on a chopped ice ledge. After a very uncomfortable night we rappelled down a gap on the west face, which took us to an
-                                                    easy snow ramp that lead directly to the summit. The summit itself consisted of two large granite blocks about five
-                                                    meters high, which from a distance looked unclimbable. Fortunately there was an easy way up on their back side. After a
-                                                    short brew stop, we then faced an arduous descent down the north ridge where our rappel lines got stuck several time,
-                                                    and we had lots of exposed down climbing and also had to rappel off our only two snowstakes. In the last rays of the sun
-                                                    we did one final rappel off a spectre-hook, which was hammered less than 3 cm into an icy crack, but even scarier it was
-                                                    flexing under bodyweight. However, it got us over the bergschrund with one meter of rope to spare and we reached the
-                                                    safety of the flat glacier terrain. We stumbled back into our base camp 70 hours after having left it. <br><br>                                        
-                                                    
-                                                    We jokingly named our new route the ‘Hypa Zypa Couloir’ in keeping with the name of the ‘Supa Dupa’. That way the Super
-                                                    and Hyper couloirs of the Kichatnas are located side by side unlike in the Alps. The overall difficulty of our route is
-                                                    American commitment grade VI corresponding to European ‘ED+’ with technical pitches of AI5+, M6+, 5.10R, A3 and a
-                                                    vertical height of 3700 feet (ca. 1100 meters).</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-dark ">
-                                    <img src="img/blog4.jpg" class="card-img-top" alt="Beautiful Grotti di Landro">
-                                    <div class="card-body mt-4">
-                                        <h5 class="card-title">Grotto di Landro - Italy</h5>
-                                        <p class="card-text">Our initial plan was to repeat the ”Mission Impossible” (M11). Unfortunately the ice curtain
-                                        hadn’t formed so the route was indeed impossible.
-                                           </p>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal4">
-                                            Read more
-                                        </button>
-                                    </div>
-                                </div>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                        aria-labelledby="Grotto" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="Grotto">Grotto di Landro - Italy</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <img src="img/blog4-modal.JPG" class="card-img-top mb-3" alt="Topping out through the short roof section">
-                                                    <p class="text-justify">For 6 months I have been training hard with this single route in mind, so it was quite disappointing to say the least. <br><br>
-                                                    
-                                                    We then headed over to Cogne to have a look at “X-Files” and “Empire Strikes Back”, but after closer inspection they
-                                                    proved to be very loose and had poor options for protection, so instead we climbed the pure ice route Repentance Super
-                                                    (WI6), which gave 5 pitches of nice ice climbing. <br> <br>
-                                                    
-                                                    However, we were hungry for some physically hard mixed climbing, so we drove across Italy to the Dolomites to have a
-                                                    look at Grotto di Landro, which was supposed to have some of the hardest mixed lines in all of Italy. This cave is
-                                                    really nice, but all of the routes are sandbagged and hard for their grade.</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                    </div>           
-                </div>   
-            </main>
-            <section>
-                <nav aria-label="Page navigation between blog articles">
-                    <ul class="pagination justify-content-center ">
-                        <li class="page-item"><a class="page-link text-white bg-dark" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link text-dark" href="blog2.html">2</a></li>
-                    </ul>
-                </nav>
-            </section>
-
-    <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start">
+      <!-- Footer -->
+      <footer class="bg-light text-center text-lg-start">
         <!-- Grid container -->
         <div class="container p-4">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Do not hesitate to contact me</h5>
-                    <p>If you happen to have any questions about my research, you are very welcome to contact me.</p>
-                    <a href="https://www.facebook.com/kristoffer.szilas" class="fs-3" target="_blank" aria-label="Click here to go to my Facebook profile"><i
-                            class="bi bi-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/kristofferszilas/?originalSubdomain=dk" class="fs-3 ms-5"
-                        target="_blank" aria-label="Click here to go to my LinkedIn profile"><i class="bi bi-linkedin"></i></a>
-                </div>
-                <!--Grid column-->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 mt-3">
-                    <h5 class="text-uppercase">Send your messeage to me</h5>
-    
-                    <p> Fill up the form below! </p>
-                    <div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                            <label for="email">Your e-mail address</label>
-                        </div>
-                        <div class="mb-2">
-                            <label for="textarea" class="form-label">Your message comes here:</label>
-                            <textarea class="form-control" id="textarea" rows="3"></textarea>
-                        </div>
-                        <div class="form-floating mt-3">
-                            <button type="button" class="btn btn-secondary">Send</button>
-                        </div>
-                    </div>
-    
-                </div>
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Do not hesitate to contact me</h5>
+              <p>
+                If you happen to have any questions about my research, you are
+                very welcome to contact me.
+              </p>
+              <a
+                href="https://www.facebook.com/kristoffer.szilas"
+                class="fs-3"
+                target="_blank"
+                aria-label="Click here to go to my Facebook profile"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/kristofferszilas/?originalSubdomain=dk"
+                class="fs-3 ms-5"
+                target="_blank"
+                aria-label="Click here to go to my LinkedIn profile"
+                ><i class="bi bi-linkedin"></i
+              ></a>
             </div>
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 mt-3">
+              <h5 class="text-uppercase">Send your messeage to me</h5>
+
+              <p>Fill up the form below!</p>
+              <div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="name@example.com"
+                  />
+                  <label for="email">Your e-mail address</label>
+                </div>
+                <div class="mb-2">
+                  <label for="textarea" class="form-label"
+                    >Your message comes here:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="textarea"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="form-floating mt-3">
+                  <button type="button" class="btn btn-secondary">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
-            <p>Impresszium</p>
-            <p>The webpages is made by Viktoria B. Pajuste.</p>
-            <p>The used images, blog entries and texts were used from <a class="text-dark"
-                    href="https://www.kristofferszilas.com/">Krsitoffer Szilas personal webpage</a></p>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.5)"
+        >
+          <p>Impresszium</p>
+          <p>The webpages is made by Viktoria B. Pajuste.</p>
+          <p>
+            The used images, blog entries and texts were used from
+            <a class="text-dark" href="https://www.kristofferszilas.com/"
+              >Krsitoffer Szilas personal webpage</a
+            >
+          </p>
         </div>
-    </footer>
-
+      </footer>
     </div>
     <!--endtag of accessibility div from the first line-->
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="javascript.js"></script>
 
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
